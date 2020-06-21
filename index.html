@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Three.js Earthquake</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/bounce.css">
+    
+    <!-- TODO: import THREE as module -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
+
+    <script src="vendor/Cannon/cannon.min.js"></script>
+    <script src="vendor/Cannon/CannonDebugRenderer.js"></script>
+
+    <!-- only load if Store.view.showDashboard === true -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts.min.js"></script>
+    <script src="vendor/echarts-gl.min.js"></script> -->
+</head>
+
+<body>
+    <div id="controls-container" class="hidden">
+        <div class="toggle-wrapper">
+            <button id="settings-toggle-btn" class="btn hidden-active"><i class="fa fa-cog" aria-hidden="true"></i></button>
+        </div>
+
+        <section id="settings-container" class="hidden">
+            <button type="button" class="btn btn-light" id="btn-drums-1"><span class="fa fa-headphones" aria-hidden="true"></span>Drum Loop</button>
+
+            <div class="play-wrapper">
+                <a class="play"></span>Stop</a>
+            </div>
+        </section>
+    </div>
+
+    <div id="dashboard-container" class="dashboard-container">
+        <div id="chart" class="echarts-entry" style="width: 400px; height: 400px;"></div>
+    </div>
+
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
