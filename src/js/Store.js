@@ -44,8 +44,8 @@ export default {
         // kick: "./assets/sounds/drum-kits/808/808-yc.wav",
     },
     autoScroll: false,
-    // autoStartTime: 4500,
-    autoStartTime: 8000,
+    // autoStartTime: 8000,
+    autoStartTime: 1000,
     // bpm: 120, // v0.4
     // bpm: 140,
     // bpm: 160,
